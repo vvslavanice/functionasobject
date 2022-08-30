@@ -20,10 +20,8 @@ def choose_func(numbers, func1, func2):
     else:
         return func2(numbers)
 
-
-if __name__ == "__main__":
-    print(choose_func(nums1, square_nums, remove_negatives))
-    print(choose_func(nums2, square_nums, remove_negatives))
+print(choose_func(nums1, square_nums, remove_negatives))
+print(choose_func(nums2, square_nums, remove_negatives))
 
 """def choose_func(numbers, func1, func2):
     processed = list(filter(lambda x: x > 0, numbers))
