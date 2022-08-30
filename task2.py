@@ -1,9 +1,10 @@
-def my_name(func, question):
-    print('What is your name?')
-    func(question)
-    print('Nice to meet you!')
+def numberscalculation(y):
+    return y + 5
 
-def whatishisname(mainname):
-    print(f'My name is {mainname}.')
+def secondcalculation(z):
+    def whatistheresult(y):
+        return z(y)
+    return whatistheresult
 
-my_name(whatishisname, 'Slava')
+result = secondcalculation(numberscalculation)
+print(result(17))
